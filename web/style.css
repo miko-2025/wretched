@@ -1,0 +1,107 @@
+html {
+
+}
+
+body {
+	position: relative;
+	background-color: black;
+	padding: 0px;
+	margin: 0px;
+	width: 100vw;
+	overflow-x: hidden;
+}
+
+* {
+	box-sizing: border-box;
+	image-rendering: pixelated;
+}
+
+canvas {
+	position: relative
+	border: 2px solid red;
+	margin: 0px;
+	padding: 0px;
+	z-index: -1;
+}
+
+.studio {
+	position: relative;
+	z-index: 1;
+}
+
+.studio .control {
+	position: absolute;
+	border: 2px solid green;
+	z-index: 2;
+}
+
+.brush-size {
+	left: 1vw;
+	top: 0px;
+	width: 98vw;
+	height: 5vh;
+}
+
+.brush-type {
+	left: 1vw;
+	width: 10vw;
+}
+
+button {
+	/*z-index: 66;
+	position: relative;
+	left: 0px;
+	top: 6vh;
+	width: 100vw;
+	height: 5vh;
+	background-color: red;*/
+}
+
+.coloris {
+	left: 11vw;
+	z-index: 99;
+}
+
+/* Studio */
+
+body, button {
+	font-family: VT323;
+}
+
+button {
+	background-color: black;
+	color: white;
+}
+
+.view {
+	display: none;
+	width: 100%;
+	padding: 1%;
+	border: 1px solid white;
+}
+
+.view.active {
+	display: block;
+}
+
+.view.main-menu {
+}
+
+.view.main-menu > button {
+	display: table;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	font-size: 2.4em;
+	border: 0px solid red;
+}
+
+.view.main-menu img {
+	width: 100vmin;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+img {
+	filter: invert(100%);
+}
